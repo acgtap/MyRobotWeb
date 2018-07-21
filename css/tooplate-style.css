@@ -191,6 +191,7 @@ p {
 	background-color: #415b90;
 	text-align: center;
 	padding:  46.7% 0px;
+	padding-bottom: 155px;
 }
 
 .fourth-section .send-to-portfolio span {
@@ -573,9 +574,10 @@ footer a:hover {
 =======================*/
 
 @media (max-width: 1200px){
-
+.col-md-4 img{margin-top:50px;}
 	.fourth-section .send-to-portfolio {
 		padding:  47.5% 0px;
+		padding-bottom: 155px;
 	}
 
 	.gallery-page .portfolio-items  {
@@ -588,6 +590,7 @@ footer a:hover {
 
 	.fourth-section .send-to-portfolio {
 		padding:  45.8% 0px;
+		padding-bottom: 200px;
 	}
 
 	.third-section {
