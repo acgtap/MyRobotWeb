@@ -574,7 +574,9 @@ footer a:hover {
 =======================*/
 
 @media (max-width: 1200px){
-.col-md-4 img{margin-top:50px;}
+.col-md-4 img{
+	margin-top:65px;
+	}
 	.fourth-section .send-to-portfolio {
 		padding:  47.5% 0px;
 		padding-bottom: 155px;
