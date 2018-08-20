@@ -588,7 +588,7 @@ footer a:hover {
 
 }
 
-@media (max-width: 992px){
+ @media (max-width: 992px){
 
 	.fourth-section .send-to-portfolio {
 		padding:  45.8% 0px;
@@ -629,7 +629,12 @@ footer a:hover {
 }
 
 @media (max-width: 850px){
-
+.first-section .container{
+	    margin-right: 20px;
+	
+}
+.first-section img{    width: 150px;
+    margin-right: 65px;}
 	.send-to-home  {
 		margin-top: 80px;
 	}
