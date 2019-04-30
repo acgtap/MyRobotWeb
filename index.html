@@ -1,554 +1,462 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, viewport-fit=cover">-->
+     <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title> 
+            NicoAI - 智能QQ群机器人
+        	</title>
+    <meta name="keywords" content="QQ机器人,酷Q,机器人,人工智能,AI" />
+    <meta name="description" content="领先的机器人提供商。专注云计算技术研发，面向广大的开发者、企事业用户、教育机构、金融机构等，提供基于云服务器的全方位云计算解决方案，提供值得信赖的企业级公有云服务。" />
+    <link href="css/custom.css" rel="stylesheet">
 
-        <title>智障AI-矢泽妮可-这可能是最可爱最鬼畜的机器人</title>
-        <meta name="description" content="矢泽妮可-这可能是最可爱最鬼畜的QQ机器人">
-        
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/tooplate-style.css">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-	 <style type="text/css">
-        table
-        {
-            border-collapse: collapse;
-            margin: 0 auto;
-            text-align: center;
-        }
-        table td, table th
-        {
-            border: 1px solid #cad9ea;
-            color: #666;
-            height: 30px;
-			text-align: center;
-        }
-        table thead th
-        {
-            background-color: #CCE8EB;
-            width: 100px;
-			text-align: center;
-        }
-        table tr:nth-child(odd)
-        {
-            background: #fff;
-        }
-        table tr:nth-child(even)
-        {
-            background: #F5FAFA;
-        }
-    </style>
-
-        <style>
-	.nav-item {
-    float: left;
-    text-align: center;
-    line-height: 42px;
-    height: 42px;
-    position: relative;
-    background-color: hsla(0,0%,100%,0);
-    transition: all .3s;
-}
-.home2{float:right;}
-.nav-item .t {
-    color: #222;
-    height: 100%;
-    display: block;
-    padding: 0 8px;
-	text-decoration: none;
-}
-.nav-item{border-bottom:3px solid #00000000;}
-.nav-item:hover{
-background-color: hsla(0,0%,100%,.6);
-border-bottom-color:#2eea80;
-color:#2eea80;
-}
-.cll{
-border-bottom-color:#2eea80;
-}
-.nav-item.home a {
-    padding-left: 20px;
-	padding-right: 20px;
-}
-.nav-item.home2 a {
-    padding-left: 20px;
-	padding-right: 20px;
-}
-.left-text{width: 500px;}
-</style>
-<div style="width:100%;height:42px;background-color: hsla(0,0%,100%,.4);
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);z-index:999;position:fixed;top:0;">
-	<ul style="list-style: none;">
-	<li report-id="playpage_main" class="nav-item home"><a href="/" title="" class="t"><img src="img/logo.png"/></a></li>
-	<li report-id="playpage_main" class="nav-item home cll"><a href="/" title="主站" class="t"><i class="bili-icon"></i>主站</a></li>
-	<li report-id="playpage_main" class="nav-item home"><a href="http://index.ai.acgtap.com" title="菜单" class="t"><i class="bili-icon"></i>机器人菜单</a></li>
-		<li report-id="playpage_main" class="nav-item home"><a href="#price" title="价格" class="t"><i class="bili-icon"></i>价格</a></li>
-		<li report-id="playpage_main" class="nav-item home"><a href="https://status.ai.acgtap.com" title="状态" class="t"><i class="bili-icon"></i>状态</a></li>
-	<li report-id="playpage_main" class="nav-item home"><a href="http://index.ai.acgtap.com/vip.html" title="授权" class="t"><i class="bili-icon"></i>购买授权</a></li>
-	
-	
-	<li report-id="playpage_main" class="nav-item home2"><a href="http://www.acgtap.com/forum-50-1.html" title="讨论" class="t"><i class="bili-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-	<li report-id="playpage_main" class="nav-item home2"><a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" title="主人sama" class="t"><i class="bili-icon"></i>主人客服</a></li>
-	<li report-id="playpage_main" class="nav-item home2"><a href="https://jq.qq.com/?_wv=1027&k=5tZyFYK" title="QQ群也要来破" class="t"><i class="bili-icon"></i>加入Q群</a></li>
-	<li report-id="playpage_main" class="nav-item home2"><a href="https://blog.acgtap.com" title="博客" class="t"><i class="bili-icon"></i>主人博客</a></li>
-	
-	
-	</ul>
-	
-	</div>
-	<div style="width:100%;height:42px;z-index:998;position:fixed;top:0;-webkit-filter: blur(4px);filter: blur(4px);"></div>
-        <section class="first-section">
-          <div class="container" style="margin-right: 20px;">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="text-content" style="width:550px;float:right;">
-                  
-				  <div class="mm1" style="width:550px;background:url(img/line-1.png);height:113px;background-size:cover;float:right;">
-				    <img style="width:220px;margin-right:85px;" src="img/moji-1.png"/>
-				  </div>
-				  
-				<div style="width:550px;background:url(img/line-2.png);height:113px;background-size:cover;float:right;">
-				    
-				  </div>
-				  
-				  
-               
-				 <span class="online" style="font-size:12px;">等待中</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="second-section" style="padding-bottom:0px;">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/first-icon.png" alt="">
-                  </div>
-                  <h4>稳定</h4>
-                  <p>稳定的PC协议和框架<br/>采用微软c#语言开发</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/second-icon.png" alt="">
-                  </div>
-                  <h4>扩展</h4>
-                  <p>支持定制机器人功能<br/>强大的二次开发</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/third-icon.png" alt="">
-                  </div>
-                  <h4>经济</h4>
-                  <p>可试用、可月付
-<br/>零风险，不圈钱
-</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/fourth-icon.png" alt="">
-                  </div>
-                  <h4>服务</h4>
-                  <p>S性感客服在线二十四小时服务<br/>
-				  客户回赠奖品多</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="third-section" id="price" name="price">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <div class="left-image col-md-4">
-                  <img src="img/left-image.png" alt="">
-                </div>
-                <div class="right-text col-md-8">
-                  <h4><em>独特而又鬼畜的风格</em><br>价格超高，我们不收1分钱</h4>
-                  <p>
-				  
-				  
-				  
-				  
-				  
-				  
-				   <table width="90%" class="table">
-        <caption>
-            <h5>
-                价格表</h5>
-        </caption>
-        <thead>
-            <tr>
-                <th>
-                    类型
-                </th>
-                <th>
-                    价格
-                </th>
-                <th>
-                    单日消息量
-                </th>
-                <th>
-                    技术支持
-                </th>
-				<th>
-                    定制
-                </th>
-				<th>
-                    允许倒卖
-                </th>
-				<th>
-                    提供权限
-                </th>
-            </tr>
-        </thead>
-        <tr>
-            <td>
-                普通/共享类型
-            </td>
-            <td>
-                15元/月
-            </td>
-            <td>
-              小于3000
-            </td>
-            <td>
-                否
-            </td>
-			<td>
-                否
-            </td>
-			<td>
-                否
-            </td>
-			<td>
-                否
-            </td>
-        </tr>
-        <tr>
-           <td>
-                普通/独立类型
-            </td>
-            <td>
-                30元/月
-            </td>
-            <td>
-              不限
-            </td>
-            <td>
-                是
-            </td>
-			<td>
-                否
-            </td>
-			<td>
-                否
-            </td>
-			<td>
-                是
-            </td>
-        </tr>
-        <tr>
-            <td>
-                中级/尊享类型
-            </td>
-            <td>
-                45元/月
-            </td>
-            <td>
-              不限
-            </td>
-            <td>
-                是
-            </td>
-			<td>
-                是
-            </td>
-			<td>
-                否
-            </td>
-			<td>
-                是
-            </td>
-        </tr>
-        <tr>
-             <td>
-                高级/豪华类型
-            </td>
-            <td>
-                75元/月
-            </td>
-            <td>
-             无限
-            </td>
-            <td>
-                是
-            </td>
-			<td>
-                是
-            </td>
-			<td>
-                否
-            </td>
-			<td>
-                是
-            </td>
-        </tr>
-        <tr>
-             <td>
-                普通/代理类型
-            </td>
-            <td>
-                40元/月
-            </td>
-            <td>
-            不限
-            </td>
-            <td>
-                是
-            </td>
-			<td>
-               是
-            </td>
-			<td>
-                是
-            </td>
-			<td>
-                是
-            </td>
-        </tr>
-        <tr>
-            <td>
-                高级/代理类型
-            </td>
-            <td>
-                50元/月
-            </td>
-            <td>
-              无限
-            </td>
-            <td>
-                是
-            </td>
-			<td>
-                是
-            </td>
-			<td>
-                是
-            </td>
-			<td>
-                是
-            </td>
-        </tr>
-
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  </table></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="fourth-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item first-item">
-                  <div class="image">
-                    <a href="img/01-big-item.jpg" data-lightbox="image-1"><img src="img/first-item.jpg"></a>
-                  </div>
-                  <div class="text">
-                    <span>机器人风格</span>
-                    <h4>二刺螈</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item second-item">
-                  <div class="image">
-                    <a href="img/02-big-item.jpg" data-lightbox="image-1"><img src="img/second-item.jpg"></a>
-                  </div>
-                  <div class="text">
-                    <span>机器人类型</span>
-                    <h4>娱乐与鬼畜</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item third-item">
-                  <div class="image">
-                    <a href="img/03-big-item.jpg" data-lightbox="image-1"><img src="img/third-item.jpg"></a>
-                  </div>
-                  <div class="text">
-                    <span>机器人特点</span>
-                    <h4>经常挂掉···雾</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="send-to-portfolio">
-                  <span>想要了解更多？</span>
-                  <div class="primary-button">
-                    <a href="https://jq.qq.com/?_wv=1027&k=5tZyFYK">点击加入Q群</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="fivth-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1"> 
-                <div class="left-text col-md-8">
-				
-                <div class="right-image col-md-4">
-                  <img src="img/right-image.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="sixth-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <form id="contact" action="" method="post">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="你的名字" required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="你的邮箱" required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message...这个功能是坏的，还是加入QQ群吧" required></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="btn">发送</button>
-                      </fieldset>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="right-info">
-                  <ul>
-                    <li><a href="mailto:xiaoqian@acgtap.com"><i class="fa fa-envelope"></i>xiaoqian@acgtap.com</a></li>
-                    <li><a href="#"><i class="fa fa-phone"></i>15923833325</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i>秋叶原大道</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-			  
-			 <h2 style="color:white;"> 一切的开端，梦的延续
-              </h2> <!--<ul>
-                  <li><a href="#/tooplate"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>-->
-                <p>Copyright &copy; 2018 ACGTAP
-                        
-                        | Design: <a href="/" target="_parent">XiaoQian</a>   | Version:1.0.0.20180721</p>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-        <script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
-<script src='http://cdn.bootcss.com/socket.io/1.3.7/socket.io.js'></script>
-<script>
-var socket = io('http://207.148.123.238:2120');
-// uid 可以为网站用户的uid，作为例子这里用session_id代替
-var uid = returnCitySN['cip'];
-// 当socket连接后发送登录请求
-socket.on('connect', function(){socket.emit('login', uid);});
-// 当服务端推送来消息时触发，这里简单的aler出来，用户可做成自己的展示效果
-socket.on('new_msg', function(msg){alert(msg);});
- socket.on('update_online_count', function(online_stat){
- $('.online').html(online_stat);
-    });
-	
-	function _toConsumableArray(t) {
-    if (Array.isArray(t)) {
-        for (var e = 0, i = Array(t.length); e < t.length; e++)
-            i[e] = t[e];
-        return i
-    }
-    return Array.from(t)
-}
-	var t, e = ["%c"], i = [];
-        JSON.parse(decodeURI(atob("JTVCJTVCJTIyJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwLy8lMjIsJTIyJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1QyU1QyU1QyU1QyUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMC8vJTIyLCUyMiUyMiU1RCwlNUIlMjIlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUMlNUMlNUMlNUMlMjAlMjAlMjAlMjAlMjAlMjAlMjAvLyUyMiwlMjIlMjIlNUQsJTVCJTIyJTIwJTIwJTIwJTIwIyNEREREREREREREREREREREREREREREIyMlMjIsJTIyJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCMjJTIwREREREREREREREREREREREREREQlMjAjIyUyMiwlMjIlMjAlMjAlMjBfX19fX19fXyUyMCUyMCUyMF9fXyUyMCUyMCUyMF9fXyUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMF9fXyUyMCUyMCUyMF9fX19fX19fJTIwJTIwJTIwX19fJTIwJTIwJTIwX19fJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwX19fJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCMjJTIwaGglMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBoaCUyMCMjJTIyLCUyMiUyMCUyMCUyMCU3QyU1QyU1QyUyMCUyMCUyMF9fJTIwJTIwJTVDJTVDJTIwJTdDJTVDJTVDJTIwJTIwJTVDJTVDJTIwJTdDJTVDJTVDJTIwJTIwJTVDJTVDJTIwJTIwJTIwJTIwJTIwJTIwJTdDJTVDJTVDJTIwJTIwJTVDJTVDJTIwJTdDJTVDJTVDJTIwJTIwJTIwX18lMjAlMjAlNUMlNUMlMjAlN0MlNUMlNUMlMjAlMjAlNUMlNUMlMjAlN0MlNUMlNUMlMjAlMjAlNUMlNUMlMjAlMjAlMjAlMjAlMjAlMjAlN0MlNUMlNUMlMjAlMjAlNUMlNUMlMjIlNUQsJTVCJTIyJTIwJTIwJTIwJTIwIyMlMjBoaCUyMCUyMCUyMCUyMC8vJTIwJTIwJTIwJTIwJTVDJTVDJTVDJTVDJTIwJTIwJTIwJTIwaGglMjAjIyUyMiwlMjIlMjAlMjAlMjAlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUMlN0MlNUMlNUMlMjAvXyU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyUyMCUyMCUyMCUyMCUyMCU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyU3QyU1QyU1QyUyMC9fJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDJTIwJTIwJTIwJTIwJTIwJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCMjJTIwaGglMjAlMjAlMjAvLyUyMCUyMCUyMCUyMCUyMCUyMCU1QyU1QyU1QyU1QyUyMCUyMCUyMGhoJTIwIyMlMjIsJTIyJTIwJTIwJTIwJTIwJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTIwX18lMjAlMjAlNUMlNUMlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUMlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUMlMjAlMjAlMjAlMjAlMjAlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUMlNUMlNUMlMjAlNUMlNUMlMjAlMjAlMjBfXyUyMCUyMCU1QyU1QyU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyUyMCUyMCUyMCUyMCUyMCU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyUyMiU1RCwlNUIlMjIlMjAlMjAlMjAlMjAjIyUyMGhoJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwaGglMjAjIyUyMiwlMjIlMjAlMjAlMjAlMjAlMjAlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUMlN0MlNUMlNUMlMjAlMjAlNUMlNUMlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUMlNUMlNUMlMjAlNUMlNUMlMjAlMjAlNUMlNUNfX19fJTIwJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDJTdDJTVDJTVDJTIwJTIwJTVDJTVDJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDJTVDJTVDJTIwJTVDJTVDJTIwJTIwJTVDJTVDX19fXyUyMCU1QyU1QyUyMCU1QyU1QyUyMCUyMCU1QyU1QyUyMiU1RCwlNUIlMjIlMjAlMjAlMjAlMjAjIyUyMGhoJTIwJTIwJTIwJTIwJTIwJTIwd3d3dyUyMCUyMCUyMCUyMCUyMCUyMGhoJTIwIyMlMjIsJTIyJTIwJTIwJTIwJTIwJTIwJTIwJTVDJTVDJTIwJTVDJTVDX19fX19fXyU1QyU1QyU1QyU1QyUyMCU1QyU1Q19fJTVDJTVDJTVDJTVDJTIwJTVDJTVDX19fX19fXyU1QyU1QyU1QyU1QyUyMCU1QyU1Q19fJTVDJTVDJTVDJTVDJTIwJTVDJTVDX19fX19fXyU1QyU1QyU1QyU1QyUyMCU1QyU1Q19fJTVDJTVDJTVDJTVDJTIwJTVDJTVDX19fX19fXyU1QyU1QyU1QyU1QyUyMCU1QyU1Q19fJTVDJTVDJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCMjJTIwaGglMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBoaCUyMCMjJTIyLCUyMiUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1QyU1QyU3Q19fX19fX18lN0MlMjAlNUMlNUMlN0NfXyU3QyUyMCU1QyU1QyU3Q19fX19fX18lN0MlMjAlNUMlNUMlN0NfXyU3QyUyMCU1QyU1QyU3Q19fX19fX18lN0MlMjAlNUMlNUMlN0NfXyU3QyUyMCU1QyU1QyU3Q19fX19fX18lN0MlMjAlNUMlNUMlN0NfXyU3QyUyMiU1RCwlNUIlMjIlMjAlMjAlMjAlMjAjIyUyME1NTU1NTU1NTU1NTU1NTU1NTU1NJTIwIyMlMjIsJTIyJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCMjTU1NTU1NTU1NTU1NTU1NTU1NTU1NTSMjJTIyLCUyMiUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMFJlbGVhc2UlMjAyLjEuMS4lMjBQb3dlcmVkJTIwYnklMjAlRTQlQjglQkIlRTclQUIlOTklRTUlODklOEQlRTclQUIlQUYuJTIyJTVELCU1QiUyMiUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1QyU1Qy8lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUMlNUMvJTIyLCUyMiUyMiU1RCU1RA=="))).forEach(function(t) {
-            var i = t[0]
-              , a = t[1];
-            e.push(i + a)
-        }),
-        i = i.concat(["color:#00a1d6"]),
-        i = [e.join("\n")].concat(i),
-        (t = console).log.apply(t, _toConsumableArray(i))
-		console.log("★★★★★★★别偷我的胖次，去偷b站2233娘的啊★★★★★★★");
-		console.log("★★★★★★★Henti，大变态，看见人家里面了呐★★★★★★★");
+<script type="text/javascript">
+    var csrfToken = 'f5b8e340e0a8601b151af5bd217e514a681950b8',
+        markdownGuide = 'Markdown 使用教程',
+        locale = 'en',
+        saved = '已保存',
+        saving = '自動保存';
 </script>
-    </body>
+<script src="js/scripts.min.js"></script>
+
+
+
+    
+<script>
+function WeChat_Login( val ) {
+    $('body').append('<div class="login_Div"><span class="close" onclick="close_Login();">&times;</span><iframe id="login_frame" name="login_frame" style="margin: 0;padding: 0;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.uovz.com//modules/addons/WeChat_Login/oauth/?'+val+'"></iframe></div><div class="mask_Div"></div>');
+}
+function WeChat_Login2( val ) {
+	$('.whmcs-body').hide();
+	$('.qq-body').remove();
+	$('.wechat-body').remove();
+    $('.login-content').append('<div class="wechat-body"><iframe id="login_frame" name="login_frame" style="margin: 0;padding: 0;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.uovz.com//modules/addons/WeChat_Login/oauth/?'+val+'"></iframe></div>');
+}
+function close_Login() {
+    $('.login_Div').remove();
+    $('.mask_Div').remove();
+}
+</script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body data-phone-cc-input="1" >
+
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+    <!-- Framework Css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Font Awesome / Icon Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Owl Carousel / Carousel- Slider -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!-- Animations -->
+    <link rel="stylesheet" type="text/css" href="css/animations.min.css">
+    <!-- Style Theme -->
+    <link rel="stylesheet" type="text/css" href="css/style_1.css">
+    <!-- Responsive Theme -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+	
+ 
+    <div class="wrapper" >
+    <!--===================== Header ========================-->
+    <header class="transparent" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo"><a href="/"><img src="picture/logo.png" alt="logo"></a></div>
+                </div>
+                <div class="col-md-7">
+                    <ul class="menu" >
+                       <!--  <li>                            <a href="/cart.php?gid=98">雲端伺服器</a>
+                                                  	</li> -->
+                        <li class="children">
+                            <a href="#">首页</a>
+                            <ul class="sub-menu">
+                               	<li><a href="https://jq.qq.com/?_wv=1027&k=5tZyFYK">QQ群</a>  <span class="badge ticket_staff">New</span></li>
+								<li><a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes">主人</a></li>
+                            </ul>
+                        </li>
+                       <li>
+                            <a href="/cart.php?gid=7">价格</a>
+                            <ul class="sub-menu">
+								<!--<li><a href="/dediserver.php">國內機房</a></li>
+                                <li><a href="/dediserver.php">香港沙田</a></li>
+                                <li><a href="/dediserver.php">日本東京</a></li>
+                                <li><a href="/dediserver.php">美國洛杉磯</a></li>-->
+                            </ul><!--sub-menu-->
+                        </li>
+                        <li><a href="https://status.ai.acgtap.com/">状态</a></li>
+                        <li><a href="https://index.ai.acgtap.com/">菜单</a></li>
+                        <li><a href="https://index.ai.acgtap.com/vip.html">授权</a></li>
+                        <li class="children">
+                            <a href="#">支援</a>
+                            <ul class="sub-menu">
+                                <li><a href="https://jq.qq.com/?_wv=1027&k=5tZyFYK">QQ群</a></li>
+                                <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes">客服</a></li>
+                              	<li><a href="https://moe.prprpr.net">论坛</a></li>
+                                                            </ul><!--sub-menu-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="button-header">
+                    	                        <a href="//www.prprpr.net/login.php" class="custom-btn login">登录</a>
+                        <a href="www.prprpr.net/register.php" class="custom-btn">注冊</a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-block">
+            <div class="logo-mobile"><a href="/"><img src="picture/logo.png" alt="logo"></a></div>
+            <a href="#" class="mobile-menu-btn"><span></span></a>
+            <div class="mobile-menu">
+                <div class="inside">
+                    <div class="logo">
+                        <a href="/"><img src="picture/logo.png" alt="logo"></a>
+                    </div><!--
+                    <ul class="menu panel-group" id="accordion" aria-multiselectable="true">
+                        <li><a href="/">門戶首頁</a></li>
+                        <li class="children panel">
+                            <a href="#menu1" class="collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="menu1">產品中心</a>
+                            <ul class="sub-menu panel-collapse collapse" id="menu1">
+                                <li>                            <a href="/cart.php?gid=98">雲端伺服器</a>
+                            </li>
+                                <li><a href="/cart.php?gid=89">虛擬伺服器</a></li>
+								<li><a href="/cart.php?gid=92">共享虚拟伺服器</a></li>
+                              	<li><a href="/cart.php?gid=7">獨立伺服器</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/announcements.php">公告信息</a></li>
+                        <li class="children panel">
+                            <a href="#menu2" class="collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="menu2">服務支援</a>
+                            <ul class="sub-menu panel-collapse collapse" id="menu2">
+                                <li><a href="/knowledgebase.php">幫助中心</a></li>
+                                <li><a href="/downloads.php">資源下載</a></li>
+                              <li><a href="/contact.php">聯系我們</a></li>
+                                                            </ul>
+                        </li>
+                    </ul>
+                    <div class="button-header">
+                                                <a href="/login.php" class="custom-btn login">登錄</a>
+                        <a href="/register.php" class="custom-btn">注冊</a>
+                                            </div>button-header-->
+                </div><!--inside-->
+            </div><!--mobile-menu-->
+        </div>
+    </header>
+    <!--===================== End of Header ========================-->
+
+        
+
+
+    <!--===================== Base Slider ========================-->
+    <div class="base-slider owl-carousel owl-theme bg-gray">
+      <div class="item"> 
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes"><img src="picture/itjiaofu.png" alt="slider"></a>
+            <div class="inside">
+ 
+            </div><!--inside-->
+        </div>
+       <!-- <div class="item"> 
+            <a href="cart.php?gid=69"><img src="picture/cmcc2.png" alt="slider"></a>
+            <div class="inside">
+ 
+            </div>
+        </div>
+       <div class="item">
+            <a href="cart.php?gid=71"><img src="picture/uovz1.png" alt="slider"></a>
+            <div class="inside">
+            </div>
+        </div>
+        <div class="item">
+            <img src="picture/bannernew2.png" alt="slider">
+            <div class="inside">
+              <h1 class="h1" style="color: #FFFFFF;">極致性價比，非凡雲體驗</h1>
+                <p>我們持續優化不同的雲端服務，務求提供更好的服務體驗</p>
+                <a href="cart.php" class="custom-btn">即刻體驗</a>
+            </div> -->
+        </div>
+    </div>
+    <!--===================== End of Base Slider ========================-->
+        <section class="bg-gray">
+        <div class="container">
+            <!--===================== Partner ========================-->
+            <div class="partner animatedParent">
+                <h5>鼎力智能，覆盖全球，专注卓越交互，多边合作促进共同繁荣</h5>
+                <!--
+                <div class="partner-slider owl-carousel owl-theme">
+                    <div class="item animated bounceInLeft delay-250"><a href="#"><img src="picture/apnic.png" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-500"><a href="#"><img src="picture/51idc.png" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-750"><a href="#"><img src="picture/zenlayer.png" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-1000"><a href="#"><img src="picture/pccw.svg" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-1250"><a href="#"><img src="picture/kt.png" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-1500"><a href="#"><img src="picture/chinatel.svg" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-1750"><a href="#"><img src="picture/juniper.png" alt="partner"></a></div>
+                    <div class="item animated bounceInLeft delay-2000"><a href="#"><img src="picture/wtt.png" alt="partner"></a></div>
+                </div>
+            </div>-->
+            <!--===================== End of Partner ========================-->
+            <!--===================== Why Choose ========================-->
+            <div class="why-choose animatedParent">
+                <h2 class="title-head">体验全新的AI环境 </h2>
+                  
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 animated bounceInUp delay-250">
+                        <div class="inside">
+                            <img src="picture/zhuanxian.png" alt="optimised">
+                            <p><a href="cart.php">稳定，经济</a></p>
+                            <p> 稳定的PC协议和框架，采用微软c#语言开发，可试用、可月付 、
+零风险，不圈钱，先进的多线程插件处理机制</p>
+                            <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" class="read-more">即刻体验 <img src="picture/right.png" alt="right"></a>
+                        </div><!--inside-->
+                    </div>
+                    <div class="col-md-4 col-xs-12 animated bounceInUp delay-500">
+                        <div class="inside">
+                            <img src="picture/kuaisu.png" alt="powerfull">
+                             <p><a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes">高响应</a></p> 
+                            <p>我们拥有一流的网络架构。我们的网络是专门为处理各种的流量需求和多个冗余而设计配备的。 </p>
+                            <a href="cart.php" class="read-more">即刻体验 <img src="picture/right.png" alt="right"></a>
+                        </div><!--inside-->
+                    </div>
+                    <div class="col-md-4 col-xs-12 animated bounceInUp delay-750">
+                        <div class="inside">
+                            <img src="picture/bgp.png" alt="website">
+                            <p><a href="cart.php">多功能 </a></p> 
+                            <p><p> 不亚于任何一个QQ机器人的功能，超高的可用性。新功能玩法多样，从此群聊不再群聊</p> </p>
+                            <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" class="read-more">即刻体验  <img src="picture/right.png" alt="right"></a>
+                        </div><!--inside-->
+                    </div>
+                </div>
+            </div>
+            <!--===================== End of Why Choose ========================-->
+            <!--===================== Hosting Software ========================-->
+            <div class="hosting-software">
+                <h2 class="title-head">优质机器人服务</h2>
+                <ul id="counter">
+                    <li><b class="count" data-count="1500">0</b>+<span>群主的选择</span></li>
+                    <li><b class="count" data-count="2545">0</b>万<span>总处理消息</span></li>
+                    <li><b class="count" data-count="524">0</b>万<span>总回复</span></li>
+                    <li><b class="count" data-count="525">0</b>+<span>天稳定运行</span></li>
+                </ul>
+            </div>
+            <!--===================== End of Hosting Software ========================-->
+        </div>
+    </section>
+	    <!--===================== Pricing Table ========================-->
+    <div class="pricing-table animatedParent">
+        <div class="container">
+            <h2 class="title-head">服务价格</h2>
+            <p>随时待命，即时响应</p>
+            <ul class="pricing-list">
+                <li class="animated bounceInLeft delay-250">
+                    <div class="images"><img src="picture/hosting2.svg" alt="hosting2"></div>
+                    <h5>普通版</h5>
+                    <p>采用主流配置，包含大部分功能。流畅处理消息，低掉线，不定制，提供必要的管理权限和后台</p>
+                    <span><b>From</b></span>
+                    <div class="price">￥59<span>/Year</span></div>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" class="custom-btn">即刻订购</a>
+                </li>
+                <li class="animated bounceInLeft delay-500">
+                    <div class="images"><img src="picture/hosting.svg" alt="hosting"></div>
+                    <h5>經銷商</h5>
+                    <p>采用主流配置，基於穩定可靠的腾讯云，盡情的開展您的業務，完美体验机器人所有功能，可以定制</p>
+                    <span><b>From</b></span>
+                    <div class="price">￥99<span>/Year</span></div>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" class="custom-btn"></a>
+                </li>
+                <li class="animated bounceInLeft delay-750">
+                    <div class="images"><img src="picture/vps.svg" alt="vps"></div>
+                    <h5>豪华型</h5>
+                    <p>采用超高配置，基於穩定可靠的腾讯云，完美体验机器人所有功能，可以定制，客服7x24小时服务</p>
+                    <span><b>From</b></span>
+                    <div class="price">￥50<span>/month</span></div>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" class="custom-btn">即刻订购</a>
+                </li>
+                <li class="animated bounceInLeft delay-1000">
+                    <div class="images"><img src="picture/server.svg" alt="server"></div>
+                    <h5>物理型</h5>
+                    <p>真实的老婆，与你面对面服务，娇喘功能，福利功能应有尽有，智能响应主人，自动任务</p>
+                    <span><b>From</b></span>
+                    <div class="price">￥999<span>/forever</span></div>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes" class="custom-btn">即刻订购</a>
+                </li>
+              
+            </ul><!--pricing-list-->
+            <div class="info-pricing animated bounceInRight delay-250">
+                <h4>使用机器人意味著工作更简单</h4>
+                <ul>
+                    <li>
+                        <h6>RSS推送</h6>
+                        <p>快速订阅RSS,自定义推送内容</p>
+                    </li>
+                    <li class="right">
+                        <h6>您已获得7x24小时金牌服务</h6>
+                        <p>我们负责网络、监控及其他工作，您可以省出精力专心处理业务。</p>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li>
+                        <h6>选择您的专属客服</h6>
+                        <p>专属客服与您无缝对接，全程跟进。随时随地，您都能与她取得联系。购买3天内，使用不满意可随时办理全额退款。</p>
+                    </li>
+                    <li class="button right">
+                        <a href="#" class="custom-btn">马上订购</a>
+                    </li>
+                </ul>
+            </div><!--info-pricing-->
+        </div>
+    </div>
+    <!--===================== End of Pricing Table ========================-->
+    <!--===================== User Slider ========================-->
+    <div class="user-slider">
+        <div class="container">
+            <div class="slider owl-carousel owl-theme">
+                 
+                <div class="item">
+                    <div class="inside">
+                        <p>"全业务支持"</p>
+                        <img src="picture/icon.svg" class="icon" alt="icon">
+                        <img src="picture/business.png" alt="logo-tesla">
+                        <p>"支持论坛发帖通知到QQ、QQ群，回帖通知到楼主QQ，群聊天记录同步到论坛板块...更多论坛信息通知到QQ客户端功能请自测吧//QQ查询天气、笑话、归属地、贵金属、QQ服务、快递、百科、彩票、娱乐等数十项便民功能//入群欢迎语、退群提示语、改名片提示语、关键字警告踢人...每个群支持单独的群管理deng"</p>
+                    </div><!--inside-->
+                </div>
+            
+             
+             
+            </div><!--slider-->
+        </div>
+    </div>
+
+ 
+    	
+    
+
+
+
+    <!--===================== End of User Slider ========================-->
+    <div class="pre-footer"><img src="picture/line-prefoter.svg" alt="bg-prefooter"></div>
+    <!--===================== Search Domain ========================-->
+    <div class="search-domain animatedParent">
+        <div class="container animated fadeInUpShort">
+            <div class="row text-center">
+                <div class="col-md-6 col-xs-12">
+                    <h3>体验全新的AI服务！</h3>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                        <a class="custom-btn green" href="http://wpa.qq.com/msgrd?v=3&uin=2480321637&site=qq&menu=yes">开始</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===================== End of Search Domain ========================-->
+    <!--===================== Footer ========================-->
+    <footer>
+        <div class="container">
+        	<!--
+            <div class="widget-footer">
+                <h4>産品服務</h4>
+                <ul>
+				<li><a href="/vps.php"></a></li>
+				<li><a href="/webhosting.php">虛擬主機</a></li>
+				<li><a href="/dediserver.php">物理伺服器</a></li>
+                </ul>
+            </div>
+            <div class="widget-footer">
+                <h4>服務支援</h4>
+                <ul>
+                    <li><a href="/knowledgebase.php">幫助中心</a></li>
+                    <li><a href="/downloads.php">資源下載</a></li>
+                </ul>
+            </div
+            <div class="widget-footer">
+                <h4>服務條款（TOS）</h4>
+                <ul>
+                    <li><a href="/tos.php">服務條款</a></li>
+                    <li><a href="/aup.php">可接受使用政策（AUP）</a></li>
+                </ul>
+            </div>
+            <div class="widget-footer">
+                <h4>客服中心</h4>
+                <ul>
+                	<li><a href="/contact.php">聯系我們</a></li>
+                    <li><a href="#">+1 76 5391 0086</a></li>
+                    <li><a href="#">info@uovz.com</a></li>
+                </ul>
+            </div>
+            <div class="widget-footer last">
+                <a href="/"><img src="picture/logo.png" alt="logo"></a>
+                <p>UOvZ 公共雲於亞太區多個數據中心提供完整的產品組合和技術，以幫助您的業務獲取成功和保持增長。 </p>
+                <ul class="social-icon">
+                    <li><a href="https://wpa.qq.com/msgrd?v=3&uin=3643319&site=qq&menu=yes"><i class="fa fa-qq"></i></a>问</li>
+                    <li><a href="https://t.me/UoVzCloud"><i class="fa fa-telegram"></i></a>哔</li>
+                    <li><a href="https://t.me/UOvZNewS"><i class="fa fa-telegram"></i></a>听</li>
+                </ul>
+            </div>-->
+            <div class="copyright">
+                <p>&copy; Copyright 2019 Moe, All Rights Reserved  </p>
+                <p> ACGTAP制作委员会  LINECENT TELECOM ( INTERNATIONAL ) GROUP   </p>  
+                       </div><!--copyright-->
+        </div>
+    </footer>
+    <!--===================== End of Footer ========================-->
+
+
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/css3-animate-it.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/main.js"></script>
+
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/www.uovz.com?from=mysslid"><img src="picture/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+    </div>
+
+
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Title</h4>
+            </div>
+            <div class="modal-body panel-body">
+                Loading...
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fa fa-circle-o-notch fa-spin"></i> Loading...
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/qqconnect.js"></script><link href="css/style_2.css" rel="stylesheet" type="text/css">
+
+
+
+</body>
 </html>
